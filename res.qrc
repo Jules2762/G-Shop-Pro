@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>assets/user.png</file>
+        <file>assets/padlock-check.png</file>
+        <file>assets/down-arrow.png</file>
+        <file>assets/diskette.png</file>
+        <file>assets/folder.png</file>
+        <file>assets/bell.png</file>
+        <file>assets/padlock.png</file>
+        <file>assets/mail.png</file>
+        <file>assets/group.png</file>
+        <file>assets/log.png</file>
+        <file>assets/transfer.png</file>
+        <file>assets/store.png</file>
+        <file>assets/parcel.png</file>
+        <file>assets/money-bag.png</file>
+        <file>assets/checklist.png</file>
+        <file>assets/cart.png</file>
+        <file>assets/product.png</file>
+        <file>assets/category.png</file>
+        <file>assets/setting (1).png</file>
+        <file>assets/dots.png</file>
+        <file>assets/more.png</file>
+        <file>assets/app.png</file>
+        <file>assets/user (2).png</file>
+        <file>assets/setting.png</file>
+        <file>assets/help-web-button.png</file>
+        <file>assets/home.png</file>
+        <file>assets/search.png</file>
+    </qresource>
+    <qresource prefix="/logo">
+        <file>assets/logo_g.png</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>assets/bg.jpg</file>
+    </qresource>
+</RCC>
