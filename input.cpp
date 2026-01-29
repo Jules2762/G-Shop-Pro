@@ -1,6 +1,7 @@
 #include "input.h"
 #include <QWidget>
 #include <QLineEdit>
+#include <QAction>
 Input::Input(InputType input_type,QWidget *parent):QLineEdit(parent),type(input_type) {
 
 
@@ -25,7 +26,8 @@ void Input::setIcon(const QString &iconPath){
     if(this->type==InputType::INPUT){
          this->addAction(QIcon(iconPath),QLineEdit::LeadingPosition);
     } else {
-         this->addAction(QIcon(":/icons/assets/search.png"),QLineEdit::TrailingPosition);
+        this->iconAction=new QAction(QIcon(":/icons/assets/search.png"),"",this);
+         this->addAction(this->iconAction,QLineEdit::TrailingPosition);
     }
 }
 
