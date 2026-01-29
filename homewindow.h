@@ -15,6 +15,7 @@
 #include "buttontool.h"
 #include <QButtonGroup>
 #include <QLabel>
+#include <QVBoxLayout>
 
 namespace Ui {
 class HomeWindow;
@@ -25,7 +26,11 @@ class HomeWindow : public QMainWindow
     Q_OBJECT
 
 public:
-
+    struct struct_sidebar_button{
+        ButtonTool *btn;
+        QWidget *page;
+        QString page_title;
+    };
     explicit HomeWindow(QWidget *parent = nullptr);
     //sidebar
     void add_sidebar_top_section();
@@ -41,6 +46,10 @@ public:
 
 private:
     Ui::HomeWindow *ui;
+    //notification
+    QLabel *notifBadge;
+
+    void init_sidebar_button(ButtonTool *&btn,const QString &iconPath,const QString &tip,QVBoxLayout *&layout,QWidget *page=nullptr);
     //top_sidebar_section
     ButtonTool *button_home,*button_administrator,*button_inventaire_stock,*button_commercial,*button_finance;
 
@@ -52,6 +61,11 @@ private:
 
     //header
     Input *header_input_search;
+    QLabel *page_name;
+
+    QToolButton *header_button_notification;
+
+    QList<struct_sidebar_button> sidebar_list;
 
 };
 
